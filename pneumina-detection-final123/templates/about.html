@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pneumonia detector</title>
+  <link rel="icon" type="icon" href="https://img.icons8.com/ios-filled/30/000000/lungs.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+  <style type="text/css">
+    .navbar{
+  font-size: 22px;
+  background-color: #b91d28 !important;
+
+}
+
+
+.navbar-brand{
+  color:white !important;
+  font-size: 24px;
+}
+
+.navbar .navbar-nav li a{
+  
+  font-size:18px;
+  color:white !important;
+  
+}
+
+body{
+  
+     font-family: Arial, Helvetica, sans-serif;
+     background-image: url(b.jpg);
+     background-size: cover;
+
+}
+
+h1,h3,h4{
+  color:white;
+}
+
+
+.card{
+  
+  margin:15px;
+  text-align: center;
+  display: inline-block;
+}
+
+.card h6{
+  color:
+#b91d28;
+}
+
+#fo{
+  color: white;
+  padding-top: 10px;
+  background-color: #b91d28;
+  font-size:20px;
+  height:50px;
+}
+
+  </style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="25" height="25"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M129,10.32c-8.54937,0 -15.48,6.93063 -15.48,15.48c0,8.54937 6.93063,15.48 15.48,15.48c8.54937,0 15.48,-6.93063 15.48,-15.48c0,-8.54937 -6.93063,-15.48 -15.48,-15.48zM27.52,13.76c-2.45604,0.00194 -4.72479,1.313 -5.95281,3.44h-11.24719c-1.89978,0.00019 -3.43981,1.54022 -3.44,3.44v27.52c0,21.59803 16.69327,39.34964 37.84672,41.10531c-0.00372,0.05816 -0.00596,0.11641 -0.00672,0.17469c0,8.4366 -0.14455,20.16715 5.05922,30.26125c5.20376,10.0941 16.23224,17.89875 35.79078,17.89875c10.13616,0 17.9627,-3.21692 23.84485,-7.84078l0.01344,0.20156c6.97429,-5.46225 11.08586,-13.01439 13.4375,-19.97485c0.19592,-0.56994 0.38043,-1.12946 0.55094,-1.6864c0.20377,-0.67647 0.40063,-1.33813 0.5711,-1.99547c0.32066,-1.21704 0.60211,-2.39759 0.81297,-3.50719c0.03609,-0.19202 0.05411,-0.3554 0.08735,-0.54422c0.17313,-0.97291 0.28974,-1.84309 0.38969,-2.70094c0.17087,-1.47264 0.28192,-2.84205 0.28219,-3.95062c0,-0.00224 0,-0.00448 0,-0.00672v-6.67172c-4.9536,-1.4792 -8.6,-6.08745 -8.6,-11.52265c0,-6.6392 5.4008,-12.04 12.04,-12.04c6.6392,0 12.04,5.4008 12.04,12.04c0,5.4352 -3.6464,10.04345 -8.6,11.52265v6.67172c0,7.0176 -2.30507,18.75096 -8.87547,28.83016c-2.9928,4.644 -7.3968,9.73842 -13.7264,13.62562l1.03469,20.18985h36.25437l2.51281,-48.81172l12.04,-4.95844v-26.03516c0,-18.6104 -14.6544,-33.71469 -32.68,-33.71469c-18.0256,0 -32.68,15.10429 -32.68,33.71469v26.03516l12.04,4.95844l0.59797,11.44203c-4.91301,5.64108 -12.10138,9.84969 -23.38797,9.84969c-17.85146,0 -25.52798,-6.12224 -29.67672,-14.16985c-4.14874,-8.0476 -4.29328,-18.67355 -4.29328,-27.11015c-0.00076,-0.05828 -0.003,-0.11652 -0.00672,-0.17469c21.15344,-1.75568 37.84672,-19.50728 37.84672,-41.10531v-27.52c-0.00019,-1.89978 -1.54022,-3.43981 -3.44,-3.44h-11.2539c-1.22682,-2.12492 -3.49245,-3.43566 -5.9461,-3.44c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c2.45604,-0.00194 4.72479,-1.313 5.95281,-3.44h7.80719v24.08c0,19.0388 -15.3612,34.4 -34.4,34.4c-19.0388,0 -34.4,-15.3612 -34.4,-34.4v-24.08h7.81391c1.22682,2.12492 3.49245,3.43566 5.94609,3.44c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM129,72.24c-2.84832,0 -5.16,2.31168 -5.16,5.16c0,2.84832 2.31168,5.16 5.16,5.16c2.84832,0 5.16,-2.31168 5.16,-5.16c0,-2.84832 -2.31168,-5.16 -5.16,-5.16z"></path></g></g></svg> Pneumonia detector</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('models') }}">Model</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('precs') }}">Precautions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('index') }}">Predict</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<br><br>
+	<center>
+
+
+<center><h1><b>Our Team</b></h1></center>
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='aditya.jpeg')}}"  alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>N ADITYA NAYAK</b></h5>
+    <h6>adityanayak864@gmail.com</h6>
+    <h6>7624949240</h6>
+    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Mobile App Development</p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="adi.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>N ADITYA NAYAK</b></h5>
+    <h6>adityanayak864@gmail.com</h6>
+    <h6>7624949240</h6>
+    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Mobile App Development</p>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="adi.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>N ADITYA NAYAK</b></h5>
+    <h6>adityanayak864@gmail.com</h6>
+    <h6>7624949240</h6>
+    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Mobile App Development</p>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="adi.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>N ADITYA NAYAK</b></h5>
+    <h6>adityanayak864@gmail.com</h6>
+    <h6>7624949240</h6>
+    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Mobile App Development</p>
+  </div>
+</div><br><br><br><br>
+<div id="fo">
+ <center><p>©copyright reserved at 2021</p></center>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
